@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OMDb Zup</string>
+    <string name="connect_to_internet">Para realizar o cadastro é necessário estar conectado à Internet.</string>
+    <string name="successfully_registered">Filme cadastrado com sucesso.</string>
+    <string name="dont_have_movies">Você não possui filmes</string>
+    <string name="please_wait">Por favor, aguarde</string>
+    <string name="loading">Carregando</string>
+    <string name="delete">Remover</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete_movie">Remover filme?</string>
+    <string name="really_want_delete_movie">Você realmente deseja remover o filme</string>
+</resources>
