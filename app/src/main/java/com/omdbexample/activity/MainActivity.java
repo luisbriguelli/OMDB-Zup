@@ -203,16 +203,6 @@ public class MainActivity extends AppCompatActivity {
                                 BitmapFactory.Options options = new BitmapFactory.Options();
                                 options.inMutable = true;
                                 bmp = BitmapFactory.decodeByteArray(data, 0, data.length, options);
-
-                                //Resize the image to save space
-                                int width = bmp.getWidth();
-                                int height = bmp.getHeight();
-                                //Setting 180 because it is the largest size that will be displayed
-                                int newWidht = convertToPx(mContext, 180);
-                                int value = (newWidht * 100)/width;
-                                int newHeight = (height*value)/100;
-
-                                bmp = Bitmap.createScaledBitmap(bmp, newWidht, newHeight, false);
                                 bmp.compress(Bitmap.CompressFormat.JPEG, 100, fos);
                                 fos.close();
                             } catch (FileNotFoundException e) {
@@ -237,9 +227,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public static int convertToPx(Context context, int input) {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        // Convert the dps to pixels, based on density scale
-        return (int) (input * scale + 0.5f);
-    }
 }

@@ -28,7 +28,6 @@
                 android:layout_alignParentLeft="true"
                 fresco:placeholderImage="@mipmap/ic_refresh_grey600_24dp"
                 android:layout_marginRight="8dp"
-                android:scaleType="fitCenter"
                 />
 
             <TextView
